@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link, useSearchParams } from 'react-router-dom';
 
+
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+
+
 function CustomerListPage() {
   const [customers, setCustomers] = useState([]);
   const [searchParams, setSearchParams] = useSearchParams();
